@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title> andy truong </title>
+  <meta name="description" content="Andy Truong is a 3rd Year BTM Student currently studying at the Ryerson University.">
+  <meta name="author" content="Andy Truong">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="custom.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item mv"><a class="navbar-link" href="#header"> AT </a> </li>
+        <li class="navbar-item"><a class="navbar-link" href="#about"> About </a> </li>
+        <li class="navbar-item"><a class="navbar-link" href="#experience"> Experience </a> </li>
+        <li class="navbar-item"><a class="navbar-link" href="#contact"> Contact </a> </li>
+      </ul>
+    </nav>
+
+    <div id="header">
+      <div class="title">
+        <h1> I'M ANDY TRUONG </h1>
+        <p>  THIRD YEAR BUSINESS TECHNOLOGY MANAMGENT STUDENT. </p>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="row section centered" id="about">
+      <h4> About Me </h4>
+      <div class="offset-by-three columns six">
+          <p class="centered" >
+          Hello! I'm Andy Truong, and I am a third year business technology student 
+		  at Ryerson University. Classes I have taken helped me explore the field of both 
+		  Information Technology and Business. I am experienced with 
+		  Enterprise Architecture, Microsoft SQL, Java, SPSS, Microsoft Visio, and Microsoft Excel.</br></br> I'm
+          enthusiastic about the field of IT.
+          </p>
+      </div>
+    </div>
+
+    <div class="row section" id="experience">
+      <h4 class="centered"> Experience </h4>
+      <div class="row job">
+        <div class="four columns">
+            <p class="exp-info"><strong><a href="http://www.workthehottestevents.com/">Northwest Security</a></strong></p>
+          <p class="exp-info">August 2015 - May 2016</p>
+          <p class="exp-info title"><em> Security Guard </br> </em></p>
+        </div>
+        <div class="six columns">
+          <p class="exp-desc">
+            <ul>
+              <li>Trained in Level C CPR</li>
+              <li>Responsible for maintaining barricades for restricted areas</li>
+              <li> Developed the ability to work remarkably well under time constraints by allocating time towards specific tasks</li>
+            </ul>
+            </p>
+        </div>
+      </div>
+      <div class="row job">
+        <div class="four columns">
+            <p class="exp-info"><strong><a href="http://www.contemporarysecurity.com/">CSC</a></strong></p>
+          <p class="exp-info">July - August 2015</p>
+          <p class="exp-info title"><em>Security Guard </em></p>
+        </div>
+        <div class="six columns">
+          <p class="exp-desc">
+            <ul>
+                <li> Consistently inspected bags and wanded guests for prohibited items</li>
+                <li>Responsible for reporting incidences during patrols</li>
+                <li>Provided exceptional customer service to ensure the comfort and enjoyment of guests</li>
+                <li>Developed excellent communication skills by resolving guest problems</li>
+            </ul>
+            </p>
+        </div>
+      </div>
+      <div class="row job">
+        <div class="four columns">
+            <p class="exp-info"><strong><a href="http://theex.com/">Canadian National Exhibition</a></strong></p>
+          <p class="exp-info">July - August 2014 </p>
+          <p class="exp-info title"><em>Push Cart Attendant</em></p>
+        </div>
+        <div class="six columns">
+          <p class="exp-desc">
+            <ul>
+                <li> Responsible for independently keeping garbage cans, recycling bins, and compost bins empty</li>
+                <li>Efficiently emptied waste and recycling into compactor rooms</li>
+                <li>Cleansed and replenished equipment at the beginning and end of each shift</li>
+                <li>Developed cleaning and efficiency skills though repetitive cleaning tasks</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+    <div class="row section" id="contact">
+      <h4 class="centered"> Contact Me </h4>
+      <div class="offset-by-two eight columns">
+        <ul class="contact-links">
+	        <li><a id="email" value="ndtrng@gmail.com" data-clipboard-target="#email"><i class="fa fa-envelope-o"></i>ndtrng@gmail.com </a></li>
+	        <li><a href="https://www.linkedin.com/in/andy-truong-79257b13b/"><i class="fa fa-linkedin"></i>andytruong</a></li>
+          <li><a href="AT-resume.pdf"><i class="fa fa-file-text-o"></i>resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('.navbar-link').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+          || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+             if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top - 100
+              }, 1000);
+              return false;
+          }
+      }
+    });
+
+    new Clipboard('.contact-links a');
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
